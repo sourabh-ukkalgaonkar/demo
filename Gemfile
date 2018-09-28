@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Use BootStrap
-gem 'bootstrap'
+# gem 'bootstrap'
 gem 'jquery-rails'
 
 group :development, :test do
@@ -43,6 +43,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'pry-nav'
 end
 
 group :development do
@@ -58,3 +59,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'refinerycms', '4.0.2'
+
+gem 'refinerycms-tinymce', git: 'https://github.com/ghoppe/refinerycms-tinymce'
+
