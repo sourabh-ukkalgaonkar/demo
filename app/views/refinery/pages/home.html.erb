@@ -1,0 +1,400 @@
+<section class="banner-section">
+  <div class="container">
+    <div class="logo">
+      <div class="col-md-6 col-sm-6">
+        <%= image_tag('logo.png')%>
+      </div>
+      <div class="col-md-6 col-sm-6 sports-img">
+        <%= image_tag('sportsbook-img.png')%>
+      </div>
+    </div>
+    <div class="heading text-center">
+      <h1>Welcome Sports Fans!</h1>
+      <p>Test your skill and knowledge with Avantage® against competitors worldwide!</p>
+    </div>
+    <div class="banner-block">
+      <div class="col-md-4">
+        <div class="video-block">
+          <div class="video-wrapper">
+            <%= video_tag('video.mp4', size: '16x10', poster: "video-bg.png")%>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="text-block">
+          <div class="survey-button live-data-btn text-center">
+            <a href="#survey-block" class="btn btn-lg custom-btn">Click to Survey</a>
+            <a href="live.html" class="btn live-data custom-btn">Live Data</a>
+          </div>
+          <div class="welcome-slider">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <p>
+                    <%= image_tag('comma') %>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                  <div class="pull-right">- Jonathan Douglas</div>
+                </div>
+                <div class="item">
+                  <p><%= image_tag('comma')%> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                  <div class="pull-right">- Jonathan Douglas</div>
+                </div>
+                <div class="item">
+                  <p><%= image_tag('comma')%> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                  <div class="pull-right">- Jonathan Douglas</div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- slider -->
+        </div> <!-- text-block -->
+      </div>
+    </div> <!-- banner block -->
+  </div> <!-- container -->
+</section> <!-- Banner Section -->
+
+<section class="testimonial-section">
+  <div class="container">
+    <div class="testimonial-points mob-show tab-show desk-hidden">
+      <ul>
+        <li>Lorem Ipsum is simply dummy text </li>
+        <li>Of the printing and typesetting industry </li>
+        <li>It was popularised in the 1960s </li>
+      </ul>
+    </div>
+    <div class="col-md-4 pull-right">
+      <div class="video-block">
+        <div class="video-wrapper">
+          <%= video_tag('video.mp4', poster: 'video-bg2.png')%>
+        </div>
+      </div>
+      <div class="survey-button text-center pro-hidden">
+        <a href="#survey-block" class="btn btn-lg custom-btn">Click to Survey</a>
+      </div>
+    </div>
+    <div class="col-md-8 pull-left">
+      <div class="testimonial-block">
+        <div class="welcome-slider testimonial-slider">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <p>
+                  <%= image_tag('comma') %> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                <div class="pull-right">- Jonathan Douglas</div>
+              </div>
+              <div class="item">
+                <p>
+                  <%= image_tag('comma') %> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.
+                </p>
+                <div class="pull-right">- Jonathan Douglas</div>
+              </div>
+              <div class="item">
+                <p>
+                  <%= image_tag('comma') %> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                <div class="pull-right">- Jonathan Douglas</div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- slider -->
+
+        <div class="testimonial-points mobile-hidden tab-hidden">
+          <ul>
+            <li>Lorem Ipsum is simply dummy text </li>
+            <li>Of the printing and typesetting industry </li>
+            <li>It was popularised in the 1960s </li>
+          </ul>
+        </div>
+        <div class="survey-button pro-show">
+          <button class="btn btn-lg custom-btn">Click to Survey</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- container -->
+</section> <!-- testimonial section -->
+
+<section class="survey-section">
+  <div class="container">
+    <div class="blank-div">
+    </div>
+    <div class="survey-block" id="survey-block">
+      <div class="heading text-center">
+        <h1>Survey</h1>
+      </div>
+
+      <div id="myCarousel" class="carousel slide"> <!-- slider -->
+        <div class="carousel-inner">
+          <div class="active item new" id="slide1">
+            <div class="question-block">
+              <div class="row-row-margin">
+                <div class="col-md-1 col-xs-2 pad-none">
+                  <p>Q1 : </p>
+                </div>
+                 <div class="col-md-10 col-xs-10 pad-none">
+                  <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="row row-margin">
+                <div class="col-md-1 col-sm-1"></div>
+                <div class="col-md-10 col-sm-10 col-xs-12 pad-none">
+                 <div class="answer-block">
+                    <textarea placeholder="Use voice recognition or type your answer">Use voice recognition or type your answer
+                    </textarea>
+                    <%= image_tag('voice-icon.png') %>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 mob-btn">
+                  <!-- <div class="next-btn">
+                    <a href="#">NEXT</a>
+                  </div> -->
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="item new" id="slide2">
+             <div class="question-block" id="question2">
+               <div class="row-row-margin">
+                 <div class="col-md-1 col-xs-2 pad-none">
+                   <p>Q2 : </p>
+                 </div>
+                  <div class="col-md-10 col-xs-10 pad-none">
+                   <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                 </div>
+                 <div class="col-md-1"></div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="row row-margin">
+                 <div class="col-md-1 col-sm-1"></div>
+                 <div class="col-md-10 col-sm-10 col-xs-12 pad-none">
+                  <div class="answer-block question-2">
+                     <div class="select-answer">
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" />
+                           <i class="input-helper"></i>
+                           <span>"de Finibus Bonorum et Malorum", written by Cicero in 45 BC</span>
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" checked="" />
+                           <i class="input-helper"></i>
+                           <span>Lorem ipsum dolor sit amet.</span>
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" />
+                           <i class="input-helper"></i>
+                           <span>The standard Lorem Ipsum passage, used since the 1500s.</span>
+                         </label>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-1 col-sm-1 mob-btn">
+                   <div class="next-btn">
+                     <a href="#question3">NEXT</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+          <div class="item new" id="slide3">
+             <div class="question-block" id="question2">
+               <div class="row-row-margin">
+                 <div class="col-md-1 col-xs-2 pad-none">
+                   <p>Q3 : </p>
+                 </div>
+                  <div class="col-md-10 col-xs-10 pad-none">
+                   <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                 </div>
+                 <div class="col-md-1"></div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="row row-margin">
+                 <div class="col-md-1 col-sm-1"></div>
+                 <div class="col-md-10 col-sm-10 col-xs-12 pad-none">
+                  <div class="answer-block question-2">
+                     <div class="select-answer">
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" checked="" />
+                           <i class="input-helper"></i>
+                           <span>"de Finibus Bonorum et Malorum", written by Cicero in 45 BC</span>
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" checked="" />
+                           <i class="input-helper"></i>
+                           <span>Lorem ipsum dolor sit amet.</span>
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" />
+                           <i class="input-helper"></i>
+                           <span>The standard Lorem Ipsum passage, used since the 1500s.</span>
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" />
+                           <i class="input-helper"></i>
+                           <span>The standard Lorem Ipsum passage, used since the 1500s.</span>
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox" />
+                           <i class="input-helper"></i>
+                           <span>The standard Lorem Ipsum passage, used since the 1500s.</span>
+                         </label>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-1 col-sm-1 mob-btn">
+                   <div class="next-btn">
+                     <a href="#question3">NEXT</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+          <div class="item new" id="slide4">
+            <div class="survey-block" id="survey-block">
+              <div class="question-block" id="question2">
+                <div class="row-row-margin">
+                  <div class="col-md-12 pad-none">
+                  <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                  </div>
+                  <form class="contact-form">
+                    <div class="form-group col-md-6 pad-none">
+                      <label for="exampleInputEmail1">Full Name</label>
+                      <input type="text" class="form-control" placeholder="enter here">
+                    </div>
+                    <div class="form-group col-md-6 pad-none">
+                      <label for="exampleInputEmail1">email address</label>
+                      <input type="text" class="form-control" placeholder="enter here">
+                    </div>
+                    <div class="col-md-12 pad-none">
+                    <label>phone number (optional)</label>
+                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
+                    </div>
+                    <div class="form-group col-md-6 pad-none">
+                        <label class="custom-select">
+                          <select>
+                            <option>Philippines (+63)</option>
+                            <option>Philippines (+63)</option>
+                            <option>Philippines (+63)</option>
+                            <option>Philippines (+63)</option>
+                          </select>
+                        </label>
+                    </div>
+                    <div class="form-group col-md-6 pad-none">
+                      <input type="text" class="form-control" placeholder="enter best number here">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-md-6 pad-none">
+                      <label for="exampleInputEmail1">Favorite Team(s)</label>
+                      <input type="text" class="form-control" placeholder="enter here">
+                    </div>
+                    <div class="form-group col-md-6 pad-none">
+                      <label for="exampleInputEmail1">Team</label>
+                      <input type="text" class="form-control" placeholder="enter here">
+                    </div>
+                    <div class="col-md-12 pad-none">
+                      <a href="thanku.php" class="next-btn pull-right">SUBMIT</a>
+                      <a href="#" class="next-btn pull-left">BACK</a>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+          </div>
+        </div>
+
+      </div> <!-- end slider -->
+      <a class="carousel-control left next-btn" href="#myCarousel" id="back-btn" data-slide="prev">BACK</a>
+      <a class="carousel-control right next-btn" href="#myCarousel" id="next-btn" data-slide="next">NEXT</a>
+    </div>
+  </div>
+</section> <!-- survey-section  -->
+
+<footer class="text-center">
+  <p>© 2018  Avantage Entertainment  •  All Rights Reserved</p>
+</footer>
+
+<script type="text/javascript">
+  $(window).load(function() {
+    $('#back-btn').hide();
+    $('#myCarousel').carousel({
+      interval: false
+    });
+
+    $('#next-btn').on('click', () => {
+      $('#next-btn').hide();
+      $('#back-btn').hide();
+      setTimeout(function(){
+        let component = $('.item.new.active')[0].id
+        $('#next-btn').show();
+        $('#back-btn').show();
+        if(component == 'slide4') {
+          $('#next-btn').hide();
+          $('#back-btn').hide();
+        }
+      }, 650);
+    });
+
+    $('#back-btn').on('click', () => {
+      $('#next-btn').hide();
+      $('#back-btn').hide();
+      setTimeout(function(){
+        let component = $('.item.new.active')[0].id
+        $('#next-btn').show();
+        $('#back-btn').show();
+        if(component == 'slide1') {
+          $('#back-btn').hide();
+        }
+      }, 650);
+    });
+
+    $( ".video-wrapper" ).each(function( index ) {
+
+      var videoPlayButton,
+      videoWrapper = document.getElementsByClassName('video-wrapper')[index],
+        video = document.getElementsByTagName('video')[index],
+        videoMethods = {
+            renderVideoPlayButton: function() {
+                if (videoWrapper.contains(video)) {
+            this.formatVideoPlayButton()
+                    video.classList.add('has-media-controls-hidden')
+                    videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[index]
+                    videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+                }
+            },
+
+            formatVideoPlayButton: function() {
+                videoWrapper.insertAdjacentHTML('beforeend', '\
+                    <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
+                        <circle cx="100" cy="100" r="90" fill="#000"/>\
+                        <polygon points="70, 55 70, 145 145, 100" fill="#ff9500"/>\
+                    </svg>\
+                ')
+            },
+
+            hideVideoPlayButton: function() {
+                video.play()
+                videoPlayButton.classList.add('is-hidden')
+                video.classList.remove('has-media-controls-hidden')
+                video.setAttribute('controls', 'controls')
+            }
+      }
+      videoMethods.renderVideoPlayButton()
+    });
+  });
+</script>
