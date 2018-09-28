@@ -1,0 +1,55 @@
+<section class="banner-section">
+  <div class="container">
+    <div class="logo">
+      <div class="col-md-6 col-sm-6">
+        <%#= image_tag('logo.png')%>
+        <%= @page.content_for(:left_logo).html_safe %>
+      </div>
+      <div class="col-md-6 col-sm-6 sports-img">
+        <%= image_tag('sportsbook-img.png')%>
+      </div>
+    </div>
+    <div class="heading text-center">
+      <%= @page.content_for(:main_title).html_safe %>
+      <p>Test your skill and knowledge with Avantage® against competitors worldwide!</p>
+    </div>
+    <div class="banner-block">
+      <div class="col-md-4">
+        <div class="video-block">
+          <div class="video-wrapper">
+            <%= video_tag('video.mp4', size: '16x10', poster: "video-bg.png")%>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="text-block">
+          <div class="survey-button live-data-btn text-center">
+            <a href="#survey-block" class="btn btn-lg custom-btn">Click to Survey</a>
+            <a href="live.html" class="btn live-data custom-btn">Live Data</a>
+          </div>
+          <div class="welcome-slider">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <p>
+                    <%= image_tag('comma') %>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                  <div class="pull-right">- Jonathan Douglas</div>
+                </div>
+                <div class="item">
+                  <p><%= image_tag('comma')%> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                  <div class="pull-right">- Jonathan Douglas</div>
+                </div>
+                <div class="item">
+                  <p><%= image_tag('comma')%> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                  <div class="pull-right">- Jonathan Douglas</div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- slider -->
+        </div> <!-- text-block -->
+      </div>
+    </div> <!-- banner block -->
+  </div> <!-- container -->
+</section>

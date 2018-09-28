@@ -1,0 +1,59 @@
+<section class="testimonial-section">
+  <div class="container">
+    <div class="testimonial-points mob-show tab-show desk-hidden">
+      <ul>
+        <li>Lorem Ipsum is simply dummy text </li>
+        <li>Of the printing and typesetting industry </li>
+        <li>It was popularised in the 1960s </li>
+      </ul>
+    </div>
+    <div class="col-md-4 pull-right">
+      <div class="video-block">
+        <div class="video-wrapper">
+          <%= video_tag('video.mp4', poster: 'video-bg2.png')%>
+        </div>
+      </div>
+      <div class="survey-button text-center pro-hidden">
+        <a href="#survey-block" class="btn btn-lg custom-btn">Click to Survey</a>
+      </div>
+    </div>
+    <div class="col-md-8 pull-left">
+      <div class="testimonial-block">
+        <div class="welcome-slider testimonial-slider">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <p>
+                  <%= image_tag('comma') %> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                <div class="pull-right">- Jonathan Douglas</div>
+              </div>
+              <div class="item">
+                <p>
+                  <%= image_tag('comma') %> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.
+                </p>
+                <div class="pull-right">- Jonathan Douglas</div>
+              </div>
+              <div class="item">
+                <p>
+                  <%= image_tag('comma') %> Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text.</p>
+                <div class="pull-right">- Jonathan Douglas</div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- slider -->
+
+        <div class="testimonial-points mobile-hidden tab-hidden">
+          <ul>
+            <li>Lorem Ipsum is simply dummy text </li>
+            <li>Of the printing and typesetting industry </li>
+            <li>It was popularised in the 1960s </li>
+          </ul>
+        </div>
+        <div class="survey-button pro-show">
+          <button class="btn btn-lg custom-btn">Click to Survey</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- container -->
+</section>
