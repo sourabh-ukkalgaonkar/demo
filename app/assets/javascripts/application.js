@@ -14,4 +14,5 @@
 //= require turbolinks
 //= require jquery
 //= require jquery_ujs
+//= carousel
 //= require_tree .
